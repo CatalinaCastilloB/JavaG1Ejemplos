@@ -1,5 +1,5 @@
 package com.generation.dia20220526;
-
+import java.util.Scanner;
 public class FuncionesIsra {
 
     public static void main(String[] args) {
@@ -10,13 +10,16 @@ public class FuncionesIsra {
         //no se puede crear un metodo dentro de otro metodo, pero si se puede llamar
 
         saludo();
+        calculoSumaPares(true, 2,"2", 434l, "sumar");
+        int edad = obtenerEdad();
+        System.out.println(edad);
 
     }
 
     //accesador tipo_de_retorno nombre_funcion(parametro a recibir)
-    public void calculoSumaPares(boolean verdad,int numero1, String numero2, Long numero3, String accion) {
+    public static void calculoSumaPares(boolean verdad, int numero1, String numero2, Long numero3, String accion) {
 
-        System.out.println(numero1 + numero3 + numero2 );
+        System.out.println(numero1 + numero3 + Integer.parseInt(numero2) );
     }
 
     public static void saludo() {
@@ -25,12 +28,12 @@ public class FuncionesIsra {
     }
 
     //funciones que retornan un tipo de datos
-    public Integer obtenerEdad() {
+    public static Integer obtenerEdad() {
+        Scanner edad1 = new Scanner(System.in);
+       // Integer edad = Integer.parseInt(edad1);
 
-        Integer edad = 18;
-
-        return 18;//retornar el contenido de la variable
-
+        //return edad;//retornar el contenido de la variable
+        return 18;
     }
 
     public Boolean validarMayorEdad(Integer edad) {
