@@ -50,7 +50,7 @@ public class Main {
 
         // interfase: solo definen los metodos, solo la estructura
         //el arraylist: tiene atributos, funciones, metodos y van mucho mas alla de la implementacion o funcion
-
+        //sobreescritura y sobrecarga de metodos, investigar
     }
 
 }
