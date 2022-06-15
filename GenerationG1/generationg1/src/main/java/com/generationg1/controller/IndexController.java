@@ -15,7 +15,7 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("Apellidos", "Castillo Belmar"); //model.addAttribute(attributeName, attributeValue);
         model.addAttribute("edad", 22);
-        Usuario usuario = new Usuario("Cata","Castillo", 26);
+        Usuario usuario = new Usuario("Cata","Castillo", 26, "1234");
 
         model.addAttribute("Usuario",usuario);
 
