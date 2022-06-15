@@ -1,6 +1,7 @@
 package com.generationg1.controller;
 
 import com.generationg1.models.Usuario;
+import com.generationg1.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ public class RegistroController {
 
     //inyeccion de dependencias, para guardar informacion
     @Autowired
+    UsuarioService usuarioService;
 
     //ruta para desplejar el jsp
     @RequestMapping("")
@@ -46,6 +48,11 @@ public class RegistroController {
             return "Registro.jsp";
         }
         System.out.println(usuario.getApellido() +" "+ usuario.getNombre() +" "+ usuario.getEdad());
+
+        //enviar obj al service
+        usuarioService.saveUsuario(usuario); //se esta creando un metodo aqui mismo, el programa automaticamente crea el metodo en el archivo de UsusarioService.java
+
+
         return "index.jsp";
     }
 
