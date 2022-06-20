@@ -9,9 +9,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/registro")
@@ -47,10 +47,15 @@ public class RegistroController {
             model.addAttribute("msgError", "Debe realizar ingreso correcto de los datos");
             return "Registro.jsp";
         }
-        System.out.println(usuario.getApellido() +" "+ usuario.getNombre() +" "+ usuario.getEdad());
 
         //enviar obj al service
         usuarioService.saveUsuario(usuario); //se esta creando un metodo aqui mismo, el programa automaticamente crea el metodo en el archivo de UsusarioService.java
+
+
+        // obtener una lista de autos
+        List<Usuario> listaUsuarios = usuarioService.findAll();
+        // Pasamos la lista de auto al jsp
+        model.addAttribute("usuariosCapturados", listaUsuarios);
 
 
         return "index.jsp";

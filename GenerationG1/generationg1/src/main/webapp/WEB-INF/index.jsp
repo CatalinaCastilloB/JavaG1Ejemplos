@@ -24,35 +24,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalina del Carmen Castillo Belmar</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
 </head>
 <body>
- <h1>Hola <c:out value="${usuario.getNombre()} ${usuario.getApellido()}"></c:out></h1> <%-- ${}: place holder--%>
-    <p><c:out value="Su edad es: ${usuario.getEdad()}"></c:out></p>
-    <br>
-    <p><c:out value="edad"></c:out></p>
-    <br>
-    <p><c:out value="${usuario.getNombre()} ${usuario.getApellido()} ${usuario.getEdad()}"></c:out></p>
-    <br>
- <p><c:out value="________00000000000___________000000000000_________"></c:out></p>
- <p> <c:out value="______00000000_____00000___000000_____0000000______"></c:out></p>
- <p> <c:out value="____0000000_____________000______________00000_____"></c:out></p>
- <p> <c:out value="___0000000_______________0_________________0000____"></c:out></p>
- <p> <c:out value=" __000000____________________________________0000___"></c:out></p>
- <p> <c:out value=" __00000_____________________________________ 0000__"></c:out></p>
- <p> <c:out value="  _00000______________________________________00000__"></c:out></p>
- <p> <c:out value="   _00000_____________________________________000000__"></c:out></p>
- <p> <c:out value="   __000000_________________________________0000000___"></c:out></p>
- <p> <c:out value="   ___0000000______________________________0000000____"></c:out></p>
- <p> <c:out value="    _____000000____________________________000000______"></c:out></p>
- <p> <c:out value="    _______000000________________________000000________"></c:out></p>
- <p> <c:out value="     __________00000_____________________0000___________"></c:out></p>
- <p> <c:out value="    _____________0000_________________0000_____________"></c:out></p>
- <p> <c:out value="     _______________0000_____________000________________"></c:out></p>
- <p> <c:out value="     _________________000_________000___________________"></c:out></p>
- <p> <c:out value="     _________________ __000_____00_____________________"></c:out></p>
- <p> <c:out value="     ______________________00__00_______________________"></c:out></p>
- <p> <c:out value="     ________________________00_________________________"></c:out>
-    </p>
+<br>
+<div class="container">
+    <table class="table table-striped" >
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+        </tr>
+        </thead>
+
+        <c:forEach var="usuario" items ="${usuariosCapturados}">
+            <tbody>
+            <tr>
+                <th scope="row">${usuario.getId()}</th>
+                <td>${usuario.getNombre()}</td>
+                <td>${usuario.getApellido()}</td>
+                <td>${usuario.edad}</td>
+            </tr>
+
+            </tbody>
+        </c:forEach>
+    </table>
+</div>
+
 </body>
 </html>
 

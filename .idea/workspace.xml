@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d116e24d-3854-4edb-8db1-ed2bde01b130" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/controller/automovilController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/controller/ingresoAutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/models/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/repositories/AutoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/services/AutoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/Autos.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/automovil.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/ingresoAuto.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/mostrarAutos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/controller/RegistroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/controller/RegistroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/java/com/generationg1/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/Registro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/GenerationG1/generationg1/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AicLRk8uLA78hF5cZpohts7qAy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/CursoJava/repositorioClases"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d116e24d-3854-4edb-8db1-ed2bde01b130" name="Changes" comment="" />
+      <created>1655495790854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655495790854</updated>
+      <workItem from="1655495792914" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

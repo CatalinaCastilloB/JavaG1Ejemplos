@@ -35,22 +35,27 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Registro</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
 </head>
 <body>
-    <div>
-
-        <form:form action="/registro/usuario" method="post" modelAttribute="usuario">
-            <form:label path="nombre">Nombre:</form:label>
-            <form:input path="nombre"></form:input>
+    <div class = "container">
+        <%--@elvariable id="usuario" type="Usuario"--%>
+        <form:form class="form-control" action="/registro/usuario" method="post" modelAttribute="usuario">
+            <form:label class="form-control" path="nombre">Nombre:</form:label>
+            <form:input class="form-control" path="nombre"></form:input>
             <br>
-            <form:label path="apellido">Apellido:</form:label>
-            <form:input path="apellido"></form:input>
+            <form:label class="form-control" path="apellido">Apellido:</form:label>
+            <form:input class="form-control" path="apellido"></form:input>
             <br>
-            <form:label path="edad">Edad:</form:label>
-            <form:input path="edad"></form:input>
+            <form:label class="form-control" path="edad">Edad:</form:label>
+            <form:input class="form-control" path="edad"></form:input>
             <br>
-            <form:label path="password">contrasena:</form:label>
-            <form:input type="password" path="password"></form:input>
+            <form:label class="form-control" path="password">contrasena:</form:label>
+            <form:input class="form-control" type="password" path="password"></form:input>
             <br>
             <input type="submit" value ="Registrar">
             <input type="button" value="enviar">

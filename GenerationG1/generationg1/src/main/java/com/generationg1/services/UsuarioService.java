@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Service
 public class UsuarioService {
@@ -17,6 +18,10 @@ public class UsuarioService {
         usuarioRepository.save(usuario);
 
 
+    }
+
+    public List<Usuario> findAll() {
+        return usuarioRepository.findAll();
     }
 
     /** logica de negocios o validaciones del sistema **/
